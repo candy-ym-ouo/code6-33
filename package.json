@@ -7,7 +7,7 @@
     "dev:web": "vite --config web/vite.config.ts",
     "build": "tsc -p api/tsconfig.json && vite build --config web/vite.config.ts",
     "start": "node api/dist/server.js",
-    "test": "tsx api/rules.test.ts"
+    "test": "tsx api/rules.test.ts && tsx api/integration.test.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
